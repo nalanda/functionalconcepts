@@ -1,0 +1,72 @@
+\chapter{Lambda Calculus}
+
+%\begin{center}
+%    \begin{tabular}{|c|c|c|c|c|c|}
+%        \hline
+%	   Version & Implemented By & Revision Date & Reason For Changes & Approved By & Approval Date \\
+%        \hline
+%	    1.0 & Avinash Bharti & 01-06-2017 & abcd &  Avinash Bharti & 02-06-2017\\
+%        \hline
+%	%    31 & 32 & 33 & 34\\
+%     %   \hline
+%    \end{tabular}
+%\end{center}
+%\section{Understanding the Role Of Lambda Calculus}
+\section{Considering the Origins of Lambda Calculus}
+\begin{itemize}
+\item Alonzo Church originally created lambda calculus in the 1930s, which is before the that computers were available. Lambda Calculus explores the theoretical basis for what it means to compute. Alozo Church worked with people like Haskell Curry, Kurt Gödel, Emil Post and Alan Turing to create a definition for algorithms.
+\item Church's motivation in creating lambda calculus was to prove that Hilbert's Entscheidungsproblem  or decision problem \textcolor{purple}{\url{https://en.wikipedia.org/wiki/Entscheidungsproblem}}. 
+\item The goals of lambda calculus are to study the interaction of functional abstraction and function application from an abstract, purely mathematical perspective.
+\item \emph{Functional abstraction} begins by breaking a particular problem into series of steps.
+\item \emph{Functional application} is the act of applying the function to an argument and obtaining a value as output.
+\item Basic properties of lambda calculus :-
+\begin{enumerate}
+\item Lambda calculus uses only functions - no other data or other types (no Strings, integers, Booleans, or other types found in programming languages today). 
+\item Lambda calculus has no state or side effects.
+\item The order of evaluation is irrelevant.
+\item All functions are unary, taking just one argument.
+\end{enumerate}
+\end{itemize}
+
+\section{Understanding the Rules}
+Lambda calculus performs three operations :-
+\begin{itemize}
+\item Creating functions to pass as variables 
+\item binding a variables to the expression ( abstraction)
+\item applying a function to an argument
+\end{itemize}
+\subsection{Working with variables}
+When considering variables in lambda calculus, the variables is a place-holder ( in mathematical sense) and not a container for values ( in the programming sense). Variables provide the basis of the inductive ( the inference of general laws from specific instances) definition of lambda terms. 
+
+Variables may be untyped or simple typed. The typing doesn't actually indicate a kind of data. Rather, it defines how to interpret the lambda calculus.
+\subsection{Using application}
+If M and N are lambda terms, the combination MN is also a lambda term. In this case, M generally refers to a function and N generally refers to an input to that function.Lambda calculus is left associated by default . EFG means E is applied to F and F is applied to G. Also math associativity doesn't apply in lambda calculus. Examples :-
+\begin{itemize}
+\item  $(x)  \rightarrow  x + 1 $ :- The statement as that variable $x$ is mapped to $ x + 1$ .
+\item $(x,y) \rightarrow x^2 + y^2 $ :- The statement is read is saying that tuple $(x,y) $ is mapped to $x^2 + y^2$. But as mentioned earlier lambda calculus allows functions to have just one input , so this should be  $x \rightarrow (y \rightarrow x^2 + y^2 )$. The transition of the code so that each function has only one argument  is called \emph{curring}.
+\end{itemize}
+\subsection{Using abstraction}
+The term abstraction derives from the creation of general rules and concepts based on the use and classification of specific examples.
+\begin{itemize}
+\item Abstracting untyped lambda calculus : When $E$ is a lambda term and $x$ is a variable , $\lambda x.E$ is a lambda term. An abstraction is definition of a function, but doesn't invoke the function. Examples :
+\begin{enumerate}
+\item $f(x) = x + 1 $ :- the lambda abstraction for this function is $\lambda x . x+ 1$
+\item $f(x) = x^2 + y^2 $ :- $\lambda x .x^2 + y^2$ . The lambda calculus has no concept of a variable declaration, therefore the variable $y$ is considered a function isn't yet defined , not a variable deceleration. If $y$ is variable then $\lambda x.(\lambda y. x^2 + y^2)$
+\end{enumerate}
+\item Abstracting simply-typed calculus :- The abstraction process for simply-typed lambda calculus follows the same pattern. The term \emph{types} doesn't refer to string, integer or Boolean - the types used by programming paradigms. The \emph{type} refers to mathematical definition of the function's \emph{domain} and \emph{range} which is represented by $ A \rightarrow B $. A number of lambda calculus extensions also rely on simple typing including: products, co-products, natural numbers (System T) and some types of recursion ( such as Programming Computable Functions, or PCF). Examples :
+\begin{enumerate}
+\item $\lambda x :\nu .x + 1$ :- In this case , the parameter $x$ has a type of $\nu$ . This is the Church style of notation. However, in many cases we need to define the type of the function as whole , which requires the Curry-style notation. Therefore the alternative method is $(\lambda x.x + 1):\nu \rightarrow \nu$
+\item When working with multi-parameter inputs, we must curry the function. Like $\lambda x:\nu (\lambda y :\nu . x^2 + y^2 )$ in Church style ,\\ 
+$(\lambda x :\nu .(\lambda y :\nu .x ^2 + y^2)) :\nu \rightarrow \nu \rightarrow \nu $ in Curry style.
+\end{enumerate}
+\end{itemize}
+\section{Performing Reduction Operations}
+\emph{Reduction} is the act of expressing a lambda function in its purest, simplest form and ensuring that no ambiguity exists in its meaning. There are three kinds of reductions to perform various tasks in lambda calculus:
+\begin{itemize}
+\item $\alpha$ alpha 
+\item $\beta$ beta
+\item $\eta$ eta
+\end{itemize}
+\subsection{Considering $\alpha$-reduction}
+next topic...
+
