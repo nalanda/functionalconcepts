@@ -1,0 +1,56 @@
+\documentclass{scrreprt}
+\input{preamble.tex}
+\begin{document}
+\input{./title.tex}
+\cleardoublepage% \clearpage
+\pagenumbering{roman}
+%\begin{flushright}
+%    %\rule{16cm}{5pt}\vskip1cm
+%    \begin{bfseries}
+%        \Huge{SOFTWARE REQUIREMENTS\\ SPECIFICATION}\\
+%        \vspace{1.9cm}
+%        for\\
+%        \vspace{1.9cm}
+%        $<$Project$>$\\
+%        \vspace{1.9cm}
+%        \LARGE{Version 1.0 approved}\\
+%        \vspace{1.9cm}
+%        Prepared by $<$author$>$\\
+%        \vspace{1.9cm}
+%        $<$Organization$>$\\
+%        \vspace{1.9cm}
+%        \today\\
+%    \end{bfseries}
+%\end{flushright}
+\tableofcontents
+\listoffigures
+%\include{preface}
+\cleardoublepage% \clearpage
+\pagenumbering{arabic}
+\part{}
+\include{chapter1/chapter1}
+%\part{Overview}
+%\include{intro}
+%\part{Platform Design}
+%\include{logicalview}
+%\include{SoftwareArchitecture}
+%\include{HardwareArchitecture}
+%\include{SecurityArchitecture}
+%\include{CommunicationArchitecture}
+%\include{ImplementationArchitecture}
+%\include{performance}
+%\part{System Design(Use Case View)}
+%\include{Tradefinance}
+%\include{}
+%\include{chapter3}
+%\include{chapter4}
+%\include{chapter5}
+%\include{chapter6}
+%\begingroup
+%  % \fbox* settings to fix the code in MyStyle.ist   
+%  \setlength{\fboxsep}{5pt}% 
+%  \setlength{\fboxrule}{0pt}%
+\part{}
+\printindex
+%\endgroup
+\end{document}

@@ -1,0 +1,103 @@
+%\usepackage[suftesi]{frontespizio}
+\usepackage[T1]{fontenc}
+%\usepackage{libertineotf}
+%\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+%\usepackage[fleqn]{amsmath}
+\usepackage{underscore}
+\usepackage[bookmarks=true]{hyperref}
+\usepackage[english]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{paralist}
+\usepackage{tabto}
+\usepackage[font={footnotesize}]{caption}
+\usepackage{subcaption}
+\usepackage{floatrow}
+\usepackage{subfig}
+\usepackage{dpfloat}
+\usepackage{wrapfig}
+\usepackage{varioref}
+%\usepackage[]{units}
+%\usepackage{nicefrac}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{chemfig,chemmacros}
+%\usepackage{pdflscape}
+%\usepackage{fullpage}
+\usepackage[a4paper, inner=1cm, outer =1cm, top=1.5cm, bottom=2cm,bindingoffset=1cm]{geometry}
+%\usepackage{fancyhdr}
+%\setlength{\headheight}{15.2pt}
+%\fancyfoot[LE]{avinash.bharti@gmail.com}
+%\lfoot{\small{\textit{by avinash bharti}}}
+%\cfoot{\Letter \; \textit{avinash.bharti@gmail.com}}
+%\rfoot{\Telefon\;7428107296}
+%\rhead{\thepage}
+%\pagestyle{fancy}
+\usepackage{multicol}
+\usepackage{microtype}
+\usepackage{mathtools}
+\usepackage{marvosym}
+\numberwithin{equation}{section}
+\usepackage{xfrac}
+%\usepackage{hyperref}
+\usepackage{enumerate}
+%\usepackage{scalerel}
+%\usepackage{cool}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usetikzlibrary{decorations.pathmorphing,patterns,decorations.pathreplacing,arrows}
+\newcommand{\midarrow}{\tikz \draw[-triangle 90] (0,0) -- +(.1,0);}
+\usepackage{graphicx}
+%\usepackage{draftwatermark}
+%\SetWatermarkLightness{0.3}
+%\SetWatermarkText{\includegraphics[scale=4,angle=0]{watermark2}}
+%\everymath=\expandafter{\the\everymath\displaystyle}
+\everymath=\expandafter{\the\everymath\displaystyle}
+\usepackage{csquotes}
+%\usepackage{lmodern}
+%\usepackage{kpfonts}
+%\usepackage{mathptmx}
+%\usepackage[charter]{mathdesign}
+%\usepackage[sc]{mathpazo}
+%\linespread{1.05}
+%\usepackage{bookman}
+%\usepackage{newcent}
+%\usepackage{fouriernc}
+%\usepackage{concrete}
+%\usepackage{concmath}
+%\usepackage[scaled = 0.92]{helvet}
+%\usepackage{berasans}
+%\usepackage{cmbright}
+%\usepackage{kurier}
+%\usepackage{courier}
+%\usepackage{inconsolata}
+%\usepackage{beramono}
+%\usepackage{asana-math}
+%\usepackage{stix}
+%\usepackage{MnSymbol}
+%\usepackage{newtxtext,newtxmath}
+%\usepackage[black]{merriweather}
+\usepackage[adobe-utopia]{mathdesign}
+\usepackage{comment}
+\includecomment{comment}
+\usepackage{imakeidx}
+\makeindex
+
+%\usepackage[math]{iwona}
+%\usepackage[condensed,math]{iwona}
+\hypersetup{
+    bookmarks=false,    % show bookmarks bar?
+    pdftitle={use  case specification},    % title
+    pdfauthor={Avinash Bharti},                     % author
+    pdfsubject={TeX and LaTeX},                        % subject of the document
+    pdfkeywords={TeX, LaTeX, graphics, images}, % list of keywords
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=blue,       % color of internal links
+    citecolor=black,       % color of links to bibliography
+    filecolor=black,        % color of file links
+    urlcolor=purple,        % color of external links
+    linktoc=page            % only page is linked
+}%
+\let\oldref\ref
+\renewcommand{\ref}[1]{(\oldref{#1})}
+\renewcommand{\chaptername}{}
