@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.12)  11 MAY 2019 21:17
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.12)  12 MAY 2019 10:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2178,7 +2178,7 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 
-(./functionalprog.aux (./chapter1/chapter1.aux))
+(./functionalprog.aux (./part1/chapter1/chapter1.aux))
 \openout1 = `functionalprog.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -2508,9 +2508,20 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 26
  [2
 
 ]
-\openout2 = `chapter1/chapter1.aux'.
+part I.
+Package scrkbase Info: You've told me to use the font selection of the element
+(scrkbase)             `partprefix' that is an alias of element `partnumber'
+(scrkbase)              on input line 30.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <24.88> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 30.
+[1
 
- (./chapter1/chapter1.tex
+
+
+]
+\openout2 = `part1/chapter1/chapter1.aux'.
+
+ (./part1/chapter1/chapter1.tex
 chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -2553,9 +2564,7 @@ LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
 (Font)              scaled to size 10.29301pt on input line 20.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <12> not available
 (Font)              Font shape `T1/lmss/bx/n' tried instead on input line 38.
- [1
-
-
+ [2
 
 
 ]
@@ -2586,24 +2595,32 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 70.
 
-) [2]
+) [3]
+part II.
+Package scrkbase Info: You've told me to use the font selection of the element
+(scrkbase)             `partprefix' that is an alias of element `partnumber'
+(scrkbase)              on input line 53.
+[4
+
+
+]
 runsystem(makeindex functionalprog.idx)...executed safely (allowed).
 
  (./functionalprog.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
- (./functionalprog.aux (./chapter1/chapter1.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 54.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 54.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 54.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
+ (./functionalprog.aux (./part1/chapter1/chapter1.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 56.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 56.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
- 49389 strings out of 493007
- 1033612 string characters out of 6136718
+ 49399 strings out of 493007
+ 1033824 string characters out of 6136718
  1281734 words of memory out of 5000000
- 52649 multiletter control sequences out of 15000+600000
- 609900 words of font info for 85 fonts, out of 8000000 for 9000
+ 52659 multiletter control sequences out of 15000+600000
+ 612668 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  78i,7n,107p,10459b,542s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on functionalprog.pdf (5 pages).
+Output written on functionalprog.pdf (7 pages).

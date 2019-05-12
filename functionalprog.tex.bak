@@ -28,7 +28,7 @@
 \cleardoublepage% \clearpage
 \pagenumbering{arabic}
 \part{}
-\include{part1/chapter1/chapter1}
+\include{chapter1/chapter1}
 %\part{Overview}
 %\include{intro}
 %\part{Platform Design}
