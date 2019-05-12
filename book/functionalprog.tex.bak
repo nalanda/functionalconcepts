@@ -28,7 +28,7 @@
 \cleardoublepage% \clearpage
 \pagenumbering{arabic}
 \part{}
-\include{chapter1/chapter1}
+\include{part1/chapter1/chapter1}
 %\part{Overview}
 %\include{intro}
 %\part{Platform Design}
@@ -51,6 +51,9 @@
 %  \setlength{\fboxsep}{5pt}% 
 %  \setlength{\fboxrule}{0pt}%
 \part{}
+\include{part2/chapter1/chapter1}
+\part{}
+\include{part3/chapter1/chapter1}
 \printindex
 %\endgroup
 \end{document}
