@@ -78,7 +78,7 @@ $\lambda x.(\lambda x.x^2 + x^2 ) $
 \subsection{Considering $\beta$-reduction}
 The concept of $\beta$-\emph{reduction or conversion} is important because it helps simplify lambda functions, sometimes with the help of $\alpha$-\emph{conversion}. Few definitions :-
 \begin{itemize}
-\item Bound variables :- $\lambda x. x + 1 $ in this $x$ is bound variable.
+\item Bound variable :- $\lambda x. x + 1 $ in this $x$ is bound variable.
 \item Unbound or free variables :- $\lambda x. x^2 + y^2$ , here $y$ is free or unbound variable. Unbound variables always remain after any sort of reduction as an unsolved part.
 \end{itemize}
 The basic idea behind $\beta$-\emph{reduction} is very simple. \\
@@ -90,6 +90,5 @@ $(2^2 + 4^2)[y1 := 4]$ \\
 $2^2 + 4^2 $ \\
 $20$
 \subsection{Considering $\eta$-reduction}
-The full implementation of lambda calculus provides a guarantee that the reduction of $(\lambda x .Px)$ , in which no argument is applied to $x$ and $P$ doesn't contain $x$ as an unbound (free) variable , results in $P$. This is the definition of the $\eta$-\emph{reduction}.\\
-\emph{Note:- $\eta$-reduction  we will take up later after some practice of $\alpha$-reduction  and $\beta$-reduction .}
+The full implementation of lambda calculus provides a guarantee that the reduction of $(\lambda x .Px)$ , in which no argument is applied to 
 
