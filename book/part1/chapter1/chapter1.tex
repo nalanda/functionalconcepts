@@ -12,6 +12,10 @@
 %    \end{tabular}
 %\end{center}
 %\section{Understanding the Role Of Lambda Calculus}
+\section{Functional Programming }
+Functional programming is an approach to programming based on functional calls as the primary programming constructs. In particular, with its roots in the theory of computing, it forms a bridge between formal methods in computing and their application. In this section we are going to look at how functional programming differs from traditional imperative programming.
+\subsection{Names and Values}
+
 \section{Considering the Origins of Lambda Calculus}
 \begin{itemize}
 \item Alonzo Church originally created lambda calculus in the 1930s, which is before the that computers were available. Lambda Calculus explores the theoretical basis for what it means to compute. Alozo Church worked with people like Haskell Curry, Kurt Gödel, Emil Post and Alan Turing to create a definition for algorithms.
@@ -60,36 +64,13 @@ The term abstraction derives from the creation of general rules and concepts bas
 $(\lambda x :\nu .(\lambda y :\nu .x ^2 + y^2)) :\nu \rightarrow \nu \rightarrow \nu $ in Curry style.
 \end{enumerate}
 \end{itemize}
-\section{Performing Reduction (Conversion)  Operations}
-\emph{Reduction or conversion } is the act of expressing a lambda function in its purest, simplest form and ensuring that no ambiguity exists in its meaning. There are three kinds of reductions to perform various tasks in lambda calculus:
+\section{Performing Reduction Operations}
+\emph{Reduction} is the act of expressing a lambda function in its purest, simplest form and ensuring that no ambiguity exists in its meaning. There are three kinds of reductions to perform various tasks in lambda calculus:
 \begin{itemize}
-\item $\alpha$   alpha 
-
+\item $\alpha$ alpha 
 \item $\beta$ beta
 \item $\eta$ eta
 \end{itemize}
 \subsection{Considering $\alpha$-reduction}
-The act of renaming variables is called $\alpha$-\emph{conversion} or $\alpha$-\emph{reduction}. Two functions are $\alpha$-\emph{equivalent} when they have same result.\\
-$\lambda x.x + 1$ \\
-$\lambda a.a + 1$\\
-The following two functions aren't $\alpha$-\emph{equivalent}; rather they're two functions:\\
-$\lambda x.(\lambda y. x^2 +y^2)$\\
-$\lambda x.(\lambda x.x^2 + x^2 ) $ 
-\subsection{Considering $\beta$-reduction}
-The concept of $\beta$-\emph{reduction or conversion} is important because it helps simplify lambda functions, sometimes with the help of $\alpha$-\emph{conversion}. Few definitions :-
-\begin{itemize}
-\item Bound variables :- $\lambda x. x + 1 $ in this $x$ is bound variable.
-\item Unbound or free variables :- $\lambda x. x^2 + y^2$ , here $y$ is free or unbound variable. Unbound variables always remain after any sort of reduction as an unsolved part.
-\end{itemize}
-The basic idea behind $\beta$-\emph{reduction} is very simple. \\
-$((\lambda x. x + 1)z)$ is lambda expression . The result of $\beta$-\emph{reduction} appears like this $(z+1)[ x := z]$ . Let take another example :-\\
-$(((\lambda x .(\lambda y. x^2  + y^2 ))2)4)$ \\
-$(((\lambda x .(\lambda y1.x^2 + y1^2))2)4)$ \\
-$((\lambda y1 .2^2 + y1^2)4)[x := 2]$ \\
-$(2^2 + 4^2)[y1 := 4]$ \\
-$2^2 + 4^2 $ \\
-$20$
-\subsection{Considering $\eta$-reduction}
-The full implementation of lambda calculus provides a guarantee that the reduction of $(\lambda x .Px)$ , in which no argument is applied to $x$ and $P$ doesn't contain $x$ as an unbound (free) variable , results in $P$. This is the definition of the $\eta$-\emph{reduction}.\\
-\emph{Note:- $\eta$-reduction  we will take up later after some practice of $\alpha$-reduction  and $\beta$-reduction .}
+next topic...
 
